@@ -1,0 +1,80 @@
+h1,
+h2,
+h3 {
+    color: #D00000;
+}
+
+img.imagem {
+    width: 300px;
+    height: 300px;
+}
+
+div.box {
+    display: inline-block;
+}
+
+/*Comentario*/
+p {
+    color: #DDF0FF;
+}
+
+p.maiusculo {
+    text-transform: uppercase;
+}
+
+header {
+    color: #DDF0FF;
+    position: fixed;
+    top: 5px;
+    left: 0px;
+}
+
+nav.header {
+    position: fixed;
+    top: 5px;
+    right: 0px;
+}
+
+ul.nav {
+    margin: 0px;
+    padding: 0px;
+
+    /*Para zerar as margens e paddings que por padrão não são as mesmas para diferentes navegadores, usamos as regras margin:0; e padding:0;*/
+}
+
+ul.nav li {
+    list-style: none;
+    display: inline;
+}
+
+ul.nav li a {
+    float: left;
+    /* para tornar a lista horizontal usamos a regra display inline e float left*/
+    border: 1px solid #D00000;
+    /*Borda provisoria na cor vermelha pra cada link*/
+    width: 100px;
+    /*Largura fixa pra cada link*/
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    /*Tamanho e uma familia de fontes*/
+    background: #DDF0FF;
+    /*cor de fundo*/
+    color: #697268;
+    /*cor de fonte*/
+    text-align: center;
+    padding: 0px 2px 2px 0px;
+    text-decoration: none;
+    /*Retirar o sublinhado*/
+}
+
+section,
+footer,
+article {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+body {
+    background-color: #000000;
+}
