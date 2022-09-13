@@ -9,6 +9,10 @@ img.imagem {
     height: 300px;
 }
 
+:hover.imagem {
+    border: 3px solid #D00000;
+}
+
 div.box {
     display: inline-block;
 }
