@@ -79,9 +79,7 @@ ul.nav li a {
     /*Retirar o sublinhado*/
 }
 
-#apresentacao {
-    /* padding pra apresentação do site não ficar em conflito com o menu, ai salta um pouco para baixo */
-}
+
 
 section,
 footer,
@@ -101,7 +99,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow-x: hidden;
+
 
 }
 
@@ -121,8 +119,7 @@ body {
 
 .navigation {
     width: 100%;
-    margin-left: 36%;
-    display: flex;
+    justify-content: center;
     display: flex;
 }
 
@@ -203,8 +200,8 @@ input {
 }
 
 .navigation-arte {
+    justify-content: center;
     width: 100%;
-    margin-left: 36%;
     display: flex;
 }
 
