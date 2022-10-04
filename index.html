@@ -11,18 +11,18 @@
 </head>
 
 <body>
-    <header><img id="icon" src="imagens/icon/logo-removebg.png" alt="icon"></header>
-    <nav class="header">
+    <header><a href="#top"><img id="icon" src="imagens/icon/logo-removebg.png" alt="icon"></a></header>
+    <nav class="menu">
         <ul class="nav">
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Cinema</a></li>
-            <li><a href="">Literatura</a></li>
-            <li><a href="">Jogos</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cinema">Cinema</a></li>
+            <li><a href="#literatura">Literatura</a></li>
+            <li><a href="#jogos">Jogos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
-    <section>
+    <section id="apresentacao">
         <h1>Apresentação do Site</h1>
         <p>Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num
             gostis.Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.Quem manda na
@@ -31,7 +31,7 @@
         </p>
         <a href=""> Conheça mais sobre o site</a>
     </section>
-    <section>
+    <section id="sobre">
         <h2>Sobre</h2>
         <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça.Sapien in
             monti
@@ -39,13 +39,40 @@
             furadis é disculpa de bebadis, arcu quam euismod magna.</p>
         <a href="">Veja mais informações sobre (nome do site)</a>
     </section>
-    <article>
-        <h2>Cinema</h2>
-        <img class="imagem" src="imagens/freedy.jpg" title="Freedy Krueger">
 
-        <img class="imagem" src="imagens/michael myers.jpg">
-    </article>
-    <article>
+    <section id="cinema">
+    <h2>Cinema</h2>
+    <div class="content">
+        <div class="slides">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+
+            <div class="slide s1">
+                <img src="imagens/cinema/freedy.jpg" alt="Freedy Krueger">
+            </div>
+            <div class="slide">
+                <img src="imagens/cinema/black phone.jpg" alt="Telefone Preto">
+            </div>
+            <div class="slide">
+                <img src="imagens/cinema/exorcist.jpg" alt="O Exorcista">
+            </div>
+            <div class="slide">
+                <img src="imagens/cinema/michael myers.jpg" alt="Michael Myers">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+        </div>
+    </div>
+    </section>
+
+    <article id="literatura">
         <h2>Literatura</h2>
         <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Aenean aliquam
             molestie
@@ -57,19 +84,19 @@
             hendrerit non. Nam vulputate dapibus.Nec orci ornare consequat. Praesent lacinia ultrices consectetur.
             Sed
             non ipsum felis.Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.</p>
-        <img class="imagem" src="imagens/uzumaki-recorte.png" title="Uzumaki Espiral" width="400">
+        <img class="imagem" src="imagens/literatura/uzumaki-recorte.png" title="Uzumaki Espiral" width="400">
 
     </article>
-    <article>
+    <article id="jogos">
         <h2>Videogames</h2>
         <div class="box">
-            <img class="imagem" src="imagens/majora mask.jpg" title="The Legend of Zelda: Majora's Mask">
-            <img class="imagem" src="imagens/silent hill 2.jpg" title="Silent Hill 2>">
-            <img class="imagem" src="imagens/cropped-800-800-870065.jpg" title="Bloodborne">
+            <img class="imagem" src="imagens/jogos/majora mask.jpg" title="The Legend of Zelda: Majora's Mask">
+            <img class="imagem" src="imagens/jogos/silent hill 2.jpg" title="Silent Hill 2>">
+            <img class="imagem" src="imagens/jogos/cropped-800-800-870065.jpg" title="Bloodborne">
         </div>
     </article>
 
-    <footer>
+    <footer id="contato">
         <h2>Contato</h2>
         <p class="maiusculo"> <strong> fale conosco </strong> </p>
 

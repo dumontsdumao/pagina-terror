@@ -38,10 +38,9 @@ header {
     left: 0px;
 }
 
-nav.header {
-    position: fixed;
-    top: 5px;
-    right: 0px;
+nav.menu {
+    float: right;
+
 }
 
 ul.nav {
@@ -59,13 +58,13 @@ ul.nav li {
 ul.nav li a {
     float: left;
     /* para tornar a lista horizontal usamos a regra display inline e float left*/
-    border: 1px solid #D00000;
+    border: 0px solid #D00000;
     /*Borda provisoria na cor vermelha pra cada link*/
     width: 100px;
     /*Largura fixa pra cada link*/
     font: 14px Verdana, Arial, Helvetica, sans-serif;
     /*Tamanho e uma familia de fontes*/
-    background: #DDF0FF;
+    background: #000000;
     /*cor de fundo*/
     color: #697268;
     /*cor de fonte*/
@@ -73,6 +72,11 @@ ul.nav li a {
     padding: 0px 2px 2px 0px;
     text-decoration: none;
     /*Retirar o sublinhado*/
+}
+
+#apresentacao {
+    padding-top: 1px;
+    /* padding pra apresentação do site não ficar em conflito com o menu, ai salta um pouco para baixo */
 }
 
 section,
@@ -83,7 +87,90 @@ article {
     margin-right: 200px;
 }
 
+/*Carrossel de imagens abaixo*/
+a {
+    text-decoration: none;
+}
 
 body {
     background-color: #000000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /*width: 100vw;*/
+}
+
+.content {
+
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*escondeu todos os conteudos que ultrapassavam a div*/
+
+    margin-left: auto;
+    margin-right: auto;
+    /*centralizar a div*/
+}
+
+.navigation {
+    position: absolute;
+    bottom: 13%;
+    left: 42%;
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #000000;
+    margin: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    /*O tempo em que o hover vai ser aplicado*/
+}
+
+.bar:hover {
+    background-color: #DDF0FF;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide {
+    width: 25%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    
+
+    /*a imagem deixara de cortar e aparecera inteira*/
+}
+
+#slide1:checked~.s1 {
+    /*O ~ vai servir pra quando o slide 1 tiver "checked" */
+    margin-left: 0;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -25%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -50%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -75%;
 }
