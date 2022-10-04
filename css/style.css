@@ -4,6 +4,8 @@ h3 {
     color: #D00000;
 }
 
+
+
 #icon {
     width: 100px;
     height: 100px;
@@ -44,6 +46,8 @@ nav.menu {
 }
 
 ul.nav {
+    float: right;
+
     margin: 0px;
     padding: 0px;
 
@@ -51,6 +55,7 @@ ul.nav {
 }
 
 ul.nav li {
+
     list-style: none;
     display: inline;
 }
@@ -75,7 +80,6 @@ ul.nav li a {
 }
 
 #apresentacao {
-    padding-top: 1px;
     /* padding pra apresentação do site não ficar em conflito com o menu, ai salta um pouco para baixo */
 }
 
@@ -83,11 +87,11 @@ section,
 footer,
 article {
     text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
-/*Carrossel de imagens abaixo*/
+
 a {
     text-decoration: none;
 }
@@ -97,9 +101,11 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    /*width: 100vw;*/
+    overflow-x: hidden;
+
 }
 
+/*Carrossel de imagens abaixo*/
 .content {
 
     height: 500px;
@@ -114,16 +120,16 @@ body {
 }
 
 .navigation {
-    position: absolute;
-    bottom: 13%;
-    left: 42%;
+    width: 100%;
+    margin-left: 36%;
+    display: flex;
     display: flex;
 }
 
 .bar {
     width: 70px;
     height: 17px;
-    border: 2px solid #000000;
+    border: 2px solid #DDF0FF;
     margin: 4px;
     border-radius: 10px;
     cursor: pointer;
@@ -153,7 +159,7 @@ input {
 .slide img {
     width: 100%;
     height: 100%;
-    
+
 
     /*a imagem deixara de cortar e aparecera inteira*/
 }
@@ -173,4 +179,82 @@ input {
 
 #slide4:checked~.s1 {
     margin-left: -75%;
+}
+
+/*Carrossel de imagens-arte  abaixo*/
+
+.content-arte {
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    /*escondeu todos os conteudos que ultrapassavam a div*/
+
+    margin-left: auto;
+    margin-right: auto;
+    /* centralizar a div*/
+}
+
+.slides-arte {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.navigation-arte {
+    width: 100%;
+    margin-left: 36%;
+    display: flex;
+}
+
+.bar-arte {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #ffffff;
+    margin: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    /*O tempo em que o hover vai ser aplicado*/
+}
+
+.bar-arte:hover {
+    background-color: #DDF0FF;
+}
+
+.slides-arte {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide-arte {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide-arte img {
+    width: 100%;
+    height: 100%;
+}
+
+#arte1:checked~.s1arte {
+    margin-left: 0;
+}
+
+#arte2:checked~.s1arte {
+    margin-left: -25%;
+}
+
+#arte3:checked~.s1arte {
+    margin-left: -45%;
+}
+
+#arte4:checked~.s1arte {
+    margin-left: -65%;
+}
+
+#arte5:checked~.s1arte {
+    margin-left: -85%;
 }

@@ -11,17 +11,22 @@
 </head>
 
 <body>
-    <header><a href="#top"><img id="icon" src="imagens/icon/logo-removebg.png" alt="icon"></a></header>
-    <nav class="menu">
-        <ul class="nav">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#cinema">Cinema</a></li>
-            <li><a href="#literatura">Literatura</a></li>
-            <li><a href="#jogos">Jogos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+    <div class="cabecalho">
+        <header>
+            <a href="#top"><img id="icon" src="imagens/icon/logo-removebg.png" alt="icon"></a>
+        </header>
+        <nav class="menu">
+            <ul class="nav">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cinema">Cinema</a></li>
+                <li><a href="#arte">Arte</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
 
+    </div>
+    <br>
     <section id="apresentacao">
         <h1>Apresentação do Site</h1>
         <p>Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num
@@ -41,39 +46,42 @@
     </section>
 
     <section id="cinema">
-    <h2>Cinema</h2>
-    <div class="content">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
+        <h2>Cinema</h2>
+        <div class="content">
 
-            <div class="slide s1">
-                <img src="imagens/cinema/freedy.jpg" alt="Freedy Krueger">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+
+                <div class="slide s1">
+                    <img src="imagens/cinema/freedy.jpg" alt="Freedy Krueger">
+                </div>
+                <div class="slide">
+                    <img src="imagens/cinema/black phone.jpg" alt="Telefone Preto">
+                </div>
+                <div class="slide">
+                    <img src="imagens/cinema/exorcist.jpg" alt="O Exorcista">
+                </div>
+                <div class="slide">
+                    <img src="imagens/cinema/michael myers.jpg" alt="Michael Myers">
+                </div>
             </div>
-            <div class="slide">
-                <img src="imagens/cinema/black phone.jpg" alt="Telefone Preto">
-            </div>
-            <div class="slide">
-                <img src="imagens/cinema/exorcist.jpg" alt="O Exorcista">
-            </div>
-            <div class="slide">
-                <img src="imagens/cinema/michael myers.jpg" alt="Michael Myers">
-            </div>
+
+
+
         </div>
-
         <div class="navigation">
             <label class="bar" for="slide1"></label>
             <label class="bar" for="slide2"></label>
             <label class="bar" for="slide3"></label>
             <label class="bar" for="slide4"></label>
         </div>
-    </div>
     </section>
 
-    <article id="literatura">
-        <h2>Literatura</h2>
+    <article id="arte">
+        <h2>Arte</h2>
         <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Aenean aliquam
             molestie
             leo, vitae iaculis nisl.Leite de capivaris, leite de mula manquis sem cabeça.Casamentiss faiz malandris
@@ -84,11 +92,56 @@
             hendrerit non. Nam vulputate dapibus.Nec orci ornare consequat. Praesent lacinia ultrices consectetur.
             Sed
             non ipsum felis.Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.</p>
-        <img class="imagem" src="imagens/literatura/uzumaki-recorte.png" title="Uzumaki Espiral" width="400">
+
+        <div class="content-arte">
+
+            <div class="slides-arte">
+                <input type="radio" name="slide" id="arte1" checked>
+                <input type="radio" name="slide" id="arte2">
+                <input type="radio" name="slide" id="arte3">
+                <input type="radio" name="slide" id="arte4">
+                <input type="radio" name="slide" id="arte5">
+
+                <div class="slide s1arte">
+                    <img src="imagens/arte/O grito de Edvard Munch.jpg" alt="O grito">
+                </div>
+
+                <div class="slide-arte"><img src="imagens/arte/O Pesadelo de Henry Fuseli (1781).jpg" alt="O pesadelo">
+                </div>
+
+                <div class="slide-arte">
+                    <img src="imagens/arte/Saturno devorando seu filho de Francisco Goya (por volta de 1819-1823).jpg"
+                        alt="Saturno devorando seu filho de Francisco Goya ">
+                </div>
+
+                <div class="slide-arte">
+                    <img src="imagens/arte/Medusa de Michelangelo Merisi da Caravaggio (1597).jpg"
+                        alt="Medusa de Michelangelo">
+                </div>
+
+                <div class="slide-arte">
+                    <img src="imagens/arte/Pirâmide de crânios de Paul Cézanne (1901).jpg"
+                        alt="Pirâmide de crânios de Paul Cézanne (1901)">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="navigation-arte">
+            <label class="bar-arte" for="arte1"></label>
+            <label class="bar-arte" for="arte2"></label>
+            <label class="bar-arte" for="arte3"></label>
+            <label class="bar-arte" for="arte4"></label>
+            <label class="bar-arte" for="arte5"></label>
+        </div>
+
+
+
 
     </article>
     <article id="jogos">
-        <h2>Videogames</h2>
+        <h2>Jogos</h2>
         <div class="box">
             <img class="imagem" src="imagens/jogos/majora mask.jpg" title="The Legend of Zelda: Majora's Mask">
             <img class="imagem" src="imagens/jogos/silent hill 2.jpg" title="Silent Hill 2>">
