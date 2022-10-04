@@ -4,6 +4,11 @@ h3 {
     color: #D00000;
 }
 
+#icon {
+    width: 100px;
+    height: 100px;
+}
+
 img.imagem {
     width: 300px;
     height: 300px;
