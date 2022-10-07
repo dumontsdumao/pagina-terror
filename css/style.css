@@ -35,10 +35,17 @@ a:hover {
 }
 
 #icon:hover {
+    /*"Animação" do icon*/
+    padding-top: 10px;
+    padding-left: 5px;
+    transition: .6s;
+    /*gambiarra pro botão da logo não bugar e aparecer as cores dos links, eu poderia corrigir criando uma id para os outros links*/
     background-color: #000000;
 }
 
+
 img.imagem {
+    /*CSS pra estilizar as imagens da galeria de jogos*/
     width: 300px;
     height: 300px;
     margin-bottom: 10px;
@@ -48,6 +55,8 @@ img.imagem {
 }
 
 :hover.imagem {
+    /*CSS pra estilizar as imagens da galeria de jogos quando passa o mouse por cima*/
+
     border: 3px solid #D00000;
     transition: .7s;
 }
