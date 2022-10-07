@@ -25,8 +25,7 @@ a:visited {
 }
 
 a:hover {
-    background-color: #DDF0FF;
-    color: #000000;
+    color: #D00000;
     border-radius: 10px;
     transition: .6s;
     padding: 10px;
@@ -154,8 +153,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-
-
 }
 
 /*Carrossel de imagens abaixo*/
@@ -193,7 +190,10 @@ body {
     background-color: #DDF0FF;
 }
 
-input {
+#slide1,
+#slide2,
+#slide3,
+#slide4 {
     display: none;
 }
 
@@ -201,6 +201,7 @@ input {
     display: flex;
     width: 400%;
     height: 100%;
+
 }
 
 .slide {
@@ -254,6 +255,14 @@ input {
     height: 100%;
 }
 
+#arte1,
+#arte2,
+#arte3,
+#arte4,
+#arte5 {
+    display: none;
+}
+
 .navigation-arte {
     justify-content: center;
     width: 100%;
@@ -263,7 +272,7 @@ input {
 .bar-arte {
     width: 70px;
     height: 17px;
-    border: 2px solid #ffffff;
+    border: 2px solid #DDF0FF;
     margin: 4px;
     border-radius: 10px;
     cursor: pointer;
@@ -309,4 +318,64 @@ input {
 
 #arte5:checked~.s1arte {
     margin-left: -85%;
+}
+
+/*DIV DE CONTATO*/
+
+label {
+    color: #DDF0FF;
+    padding-bottom: 5px;
+    display: inline-block;
+    font-family: cursive, Verdana, sans-serif;
+}
+
+button {
+    background-color: #000000;
+    color: #2A628F;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#botao {
+    color: #DDF0FF;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#botao:hover {
+    background-color: #DDF0FF;
+
+    color: #000000;
+    border-radius: 10px;
+    transition: .6s;
+    padding: 10px;
+
+}
+
+.contato {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.card {
+    background-color: #000000;
+
+   
+    /*Sombreamento no formulario*/
+}
+
+#inputNome,
+#inputEmail,
+#textAreaMensagem {
+    width: 100%;
+    margin-bottom: 1em;
+    font: 1em;
+    font-family: 1em sans-serif;
+    border: 1px solid #D00000;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #DDF0FF;
 }
