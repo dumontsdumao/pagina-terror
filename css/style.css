@@ -110,16 +110,22 @@ ul.nav li a {
     /* para tornar a lista horizontal usamos a regra display inline e float left*/
     width: 100px;
     /*Largura fixa pra cada link*/
-    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font: 18px cursive, Verdana, Arial, Helvetica, sans-serif;
     /*Tamanho e uma familia de fontes*/
     background: #000000;
     /*cor de fundo*/
     color: #2A628F;
     /*cor de fonte*/
     text-align: center;
-    padding: 0px 2px 2px 0px;
+    padding: 0px;
+    border-radius: 4px;
     text-decoration: none;
     /*Retirar o sublinhado*/
+}
+
+ul.nav li a:hover {
+    color: red;
+    transition: .6s;
 }
 
 
