@@ -1,23 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lacquer&family=Special+Elite&display=swap');
 
+p {
+    color: #DDF0FF;
+    font-family: 'Courier Prime', monospace, 'Special Elite', cursive, Verdana, sans-serif;
+    font-size: 24px;
+}
 
 h1,
 h2,
 h3 {
     color: #D00000;
-    font-family: 'Lacquer', cursive, Verdana, sans-serif;
-    font-size: 48px;
+    font-family: 'Special Elite', 'Lacquer', cursive, Verdana, sans-serif;
+    font-size: 50px;
 }
 
 h4 {
     color: #D00000;
-    font-family: 'Lacquer', cursive, Verdana, sans-serif;
-    font-size: 36px;
+    font-family: 'Special Elite', 'Lacquer', cursive, Verdana, sans-serif;
+
+    font-size: 38px;
 }
 
 a {
-    font-family: cursive, Verdana, sans-serif;
+    font-family: 'Courier Prime', monospace, 'Special Elite', cursive, Verdana, sans-serif;
     color: #2A628F;
+    font-size: 20px;
 }
 
 a:visited {
@@ -73,15 +80,6 @@ div.box {
 }
 
 /*Comentario*/
-p {
-    color: #DDF0FF;
-    font-family: cursive, Verdana, sans-serif;
-    font-size: 18px;
-}
-
-p.maiusculo {
-    text-transform: uppercase;
-}
 
 header {
     color: #DDF0FF;
@@ -115,7 +113,7 @@ ul.nav li a {
     /* para tornar a lista horizontal usamos a regra display inline e float left*/
     width: 100px;
     /*Largura fixa pra cada link*/
-    font: 18px cursive, Verdana, Arial, Helvetica, sans-serif;
+    font: 18px 'Courier Prime', monospace, 'Special Elite', cursive, Verdana, Arial, Helvetica, sans-serif;
     /*Tamanho e uma familia de fontes*/
     background: #000000;
     /*cor de fundo*/
@@ -339,7 +337,7 @@ label {
     color: #DDF0FF;
     padding-bottom: 5px;
     display: inline-block;
-    font-family: cursive, Verdana, sans-serif;
+    font-family: 'Courier Prime', monospace, 'Special Elite', cursive, Verdana, sans-serif;
 }
 
 button {
