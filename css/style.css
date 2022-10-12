@@ -343,6 +343,7 @@ label {
 }
 
 button {
+    border: #000000;
     background-color: #000000;
     color: #2A628F;
     padding: 10px;
